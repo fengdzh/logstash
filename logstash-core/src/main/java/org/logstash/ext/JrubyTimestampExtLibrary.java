@@ -130,6 +130,12 @@ public class JrubyTimestampExtLibrary implements Library {
             return ruby_to_iso8601(context);
         }
 
+        @JRubyMethod(name = "inspect")
+        public IRubyObject ruby_inspect(ThreadContext context)
+        {
+            return ruby_to_iso8601(context);
+        }
+
         @JRubyMethod(name = "to_iso8601")
         public IRubyObject ruby_to_iso8601(ThreadContext context)
         {
