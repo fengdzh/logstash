@@ -1,20 +1,5 @@
 require "logstash/version"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 namespace "artifact" do
 
   SNAPSHOT_BUILD = ENV["RELEASE"] != "1"
